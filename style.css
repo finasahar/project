@@ -1,0 +1,179 @@
+/* style.css */
+/* General Page Background */
+body, .ui-page {
+    background-color: #f3f8f2; /* soft light green */
+    font-family: 'Segoe UI', sans-serif;
+    color: #3e3e3e;
+}
+
+/* Header Styling */
+.header, .ui-header {
+    background-color: #a3c9a8; /* soft green */
+    border-bottom: 3px solid #7d5a4f; /* brown border */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+} 
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10px;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.title-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the start */
+}
+
+.title-group h1 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.title-group .tagline {
+    margin: 0;
+    font-size: 0.9em;
+    color: #f0f0f0;
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.header h1 {
+    /* Removed as the title is now in .title-group */
+    font-size: 24px;
+    color: #fff;
+}
+
+.tagline {
+    /* Removed as the tagline is now in .title-group */
+    font-size: 14px;
+    color: #fff;
+    margin-top: -10px;
+}
+
+/* Navbar Styling */
+.ui-navbar ul {
+    background-color: #dcd9cd; /* soft brownish base */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ui-navbar li a {
+    background-color: #b3a489; /* light brown */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.ui-navbar li a.ui-btn-active {
+    background-color: #739b72; /* active soft green */
+    color: #fff;
+}
+
+/* Image Styling */
+.main-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Highlight Headings */
+.highlight {
+    color: #4a7c59; /* deep green */
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Pricing Section */
+.price-tag {
+    background-color: #ede7dd;
+    border-left: 5px solid #b48a78; /* soft brown */
+    padding: 10px;
+    margin: 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.price-tag p {
+    font-size: 20px;
+    color: #3e3e3e;
+}
+
+/* List Styling */
+.ui-listview > li {
+    background-color: #fdfcf6;
+    border-bottom: 1px solid #d8cfc4;
+    color: #3e3e3e;
+}
+
+/* Photo Gallery */
+.photo-gallery img {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Booking Buttons */
+.book-btn {
+    background-color: #4a7c59 !important;
+    color: #fff !important;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Address and Promotion */
+.address, .promo {
+    text-align: center;
+    margin: 15px auto;
+    padding: 10px;
+    background-color: #eef4ea;
+    border-left: 4px solid #a3c9a8;
+    border-radius: 5px;
+}
+
+/* Social Sidebar */
+.social-sidebar {
+    position: fixed;
+    top: 40%;
+    left: 0; /* Change to 'right: 0;' if you want it on the right */
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    background-color: rgba(163, 201, 168, 0.9); /* soft green with opacity */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.social-sidebar a img {
+    width: 32px;
+    height: 32px;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.social-sidebar a img:hover {
+    transform: scale(1.1);
+}
+/* Content Area */
+.content {
+    padding-left: 50px; /* Adjust this value as needed */
+}
+
