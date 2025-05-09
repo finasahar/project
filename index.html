@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>D'Hilir Kota Resthouse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%; /* Adjust as needed */
+            margin: 20px auto;
+        }
+
+        /* Hide the images by default */
+        .slide {
+            display: none;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+<div class="social-sidebar">
+    <a href="https://www.instagram.com/dhilirkotacampsite?igsh=aTJxM2R6bnhtYWE4" target="_blank">
+        <img src="ig.jpg" alt="Instagram">
+    </a>
+    <a href="https://www.tiktok.com/@dhilirkota.campsite?_t=ZS-8wDJVUm7Gpm&_r=1" target="_blank">
+        <img src="tiktok.png" alt="TikTok">
+    </a>
+</div>
+
+
+<div data-role="page" id="home">
+
+    <div data-role="header" class="header" data-theme="b">
+        <div class="header-container">
+            <img src="logo.jpg" alt="D'Hilir Kota Resthouse Logo" class="logo">
+            <div class="title-group">
+                <h1>D'HILIR KOTA RESTHOUSE</h1>
+                <p class="tagline">Relax · Refresh · Recharge</p>
+            </div>
+        </div>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active">Home</a></li>
+                <li><a href="#package">Package</a></li>
+                <li><a href="#promotion">Promotion</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div data-role="content" class="content">
+        <h3>WELCOME TO D'HILIR KOTA RENTHOUSE</h3>
+        <img src="home.jpg" alt="Resthouse Front View" class="main-img">
+
+        <h2 class="highlight">It's Time to Relax</h2>
+        <section id="picture">
+            <div class="slideshow-container">
+                <img src="homestay.jpg" class="slide" style="display: block;">
+                <img src="santai.jpg" class="slide">
+                <img src="mandi.jpg" class="slide">
+                <img src="night.jpg" class="slide">
+
+                <a class="prev" onclick="changeSlide(-1)">❮</a>
+                <a class="next" onclick="changeSlide(1)">❯</a>
+            </div>
+        </section>
+<div data-role="footer">
+    <h4>&copy; 2025 D'HILIR KOTA CAMPSITE</h4>
+  </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="package">
+
+    <div data-role="header" data-theme="b">
+        <div class="header-container">
+            <img src="logo.jpg" alt="D'Hilir Kota Resthouse Logo" class="logo">
+            <div class="title-group">
+                <h1>Relax Package</h1>
+            </div>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#package" class="ui-btn-active">Package</a></li>
+                <li><a href="#promotion">Promotion</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content" class="content">
+        <h3>DHK Relax Package Includes:</h3>
+        <ul data-role="listview" data-inset="true">
+            <li>1 Queen Bed</li>
+            <li>1 Single Bed</li>
+            <li>Air Conditioning</li>
+            <li>Bathroom Attached</li>
+            <li>Hot Water Heater</li>
+            <li>Breakfast for 3 pax</li>
+        </ul>
+
+        <div class="photo-gallery">
+            <img src="bedroom1.jpg" alt="bedroom1 " class="main-img">
+            <img src="bedroom2.jpg" alt="bedroom2 " class="main-img">
+            <img src="toilet.jpg" alt="toilet " class="main-img">
+
+        </div>
+    </div>
+	<div data-role="footer">
+    <h4>&copy; 2025 D'HILIR KOTA CAMPSITE</h4>
+  </div>
+    </div>
+</div>
+
+<div data-role="page" id="promotion">
+
+    <div data-role="header" data-theme="b">
+        <div class="header-container">
+            <img src="logo.jpg" alt="D'Hilir Kota Resthouse Logo" class="logo">
+            <div class="title-group">
+                <h1>Promotions</h1>
+            </div>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#package">Package</a></li>
+                <li><a href="#promotion" class="ui-btn-active">Promotion</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content" class="content">
+        <p class="promo-details"><h3>Period Promotion : May - 31 August 2025 !</p></h3>
+        <div class="price-tag">
+            <p>2 Days 1 Night<br><strong>RM185</strong></p>
+            <p>3 Days 2 Nights<br><strong>RM330</strong></p>
+        </div>
+    </div>
+	<div data-role="footer">
+    <h4>&copy; 2025 D'HILIR KOTA CAMPSITE</h4>
+  </div>
+    </div>
+</div>
+
+<div data-role="page" id="contact">
+
+    <div data-role="header" data-theme="b">
+        <div class="header-container">
+            <img src="logo.jpg" alt="D'Hilir Kota Resthouse Logo" class="logo">
+            <div class="title-group">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#package">Package</a></li>
+                <li><a href="#promotion">Promotion</a></li>
+                <li><a href="#contact" class="ui-btn-active">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content" class="content">
+        <a href="tel:+60187932064" class="book-btn" data-role="button" data-theme="b">Book Now: +6018-793 2064</a>
+        <a href="tel:+60162938175" class="book-btn" data-role="button" data-theme="b">Book Now: +6016-293 8175</a>
+
+        <p class="address"><strong>Address:</strong> Lot 1374 Kampung Sepak Hilir, 81900 Kota Tinggi, Johor D.T</p>
+    </div>
+	<div data-role="footer">
+    <h4>&copy; 2025 D'HILIR KOTA CAMPSITE</h4>
+  </div>
+    </div>
+</div>
+
+<script>
+    $(document).on("pagecreate", "#home", function() {
+        var slideIndex = 0;
+        var slides = $(".slide");
+        var intervalId;
+        var slideSpeed = 3000; // Time in milliseconds between slides
+
+        function showSlides() {
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        function changeSlide(n) {
+            clearInterval(intervalId); // Stop auto sliding when manual navigation occurs
+            slideIndex += n;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            if (slideIndex < 1) {
+                slideIndex = slides.length;
+            }
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+            intervalId = setInterval(showSlides, slideSpeed); // Restart auto sliding
+        }
+
+        // Initial call to show the first slide
+        showSlides();
+
+        // Set up automatic slideshow
+        intervalId = setInterval(showSlides, slideSpeed);
+
+        // Make the changeSlide function globally accessible (if needed for inline onclick)
+        window.changeSlide = changeSlide;
+    });
+</script>
+
+</body>
+</html>
